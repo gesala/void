@@ -1,6 +1,6 @@
 # Instalacion baseX y pipewire
 sudo xbps-install -Su
-sudo xbps-install xorg-minimal xf86-video-intel intel-video-accel xorg-fonts xinit pipewire alsa-pipewire alsa-utils xdg-user-dirs xdg-utils elogind wireplumber-elogind xf86-input-synaptics xf86-input-mtrack xrandr pulseaudio-utils
+sudo xbps-install xorg-minimal xf86-video-intel intel-video-accel xorg-fonts xinit pipewire alsa-pipewire alsa-utils xdg-user-dirs xdg-utils elogind wireplumber-elogind xf86-input-synaptics xf86-input-mtrack xrandr pulseaudio-utils mlocate
 sudo ln -s /etc/sv/elogind /var/service/
 #Instalacion dwm
 

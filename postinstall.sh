@@ -28,6 +28,8 @@ ln -s /etc/sv/ntpd /var/service/
 #ln -s /etc/sv/tlp /var/service/
 xbps-install thermald
 ln -s /etc/sv/thermald /var/service
+ln -s /etc/sv/acpid /var/service
+
 git clone https://github.com/AdnanHodzic/auto-cpufreq.git
 cd auto-cpufreq && sudo ./auto-cpufreq-installer
 cd ..
