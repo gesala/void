@@ -16,5 +16,3 @@ starship preset pastel-powerline -o ~/.config/starship.toml
 
 
 
-mkdir $HOME/suckless
-cd $HOME/suckless
