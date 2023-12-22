@@ -10,6 +10,7 @@ sudo sh -c 'echo "modprobe -r bcm5974"|tee -a /etc/rc.local'
 sudo sh -c 'echo "modprobe bcm5974"|tee -a /etc/rc.local'
 
 
+
 curl -sS https://starship.rs/install.sh | sh
 mkdir -p ~/.config && touch ~/.config/starship.toml
 starship preset pastel-powerline -o ~/.config/starship.toml

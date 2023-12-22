@@ -3,8 +3,8 @@
 #ln -s /etc/sv/wpa_supplicant .
 #sv status wpa_supplicant
 #dhcpcd 
-xbps-install xtools void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree
-xbps-install broadcom-wl-dkms
+sudo xbps-install xtools void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree
+sudo xbps-install broadcom-wl-dkms
 xbps-install -Su
 xcheckrestart 
 xbps-install intel-ucode
@@ -34,6 +34,13 @@ git clone https://github.com/AdnanHodzic/auto-cpufreq.git
 cd auto-cpufreq && sudo ./auto-cpufreq-installer
 cd ..
 sudo auto-cpufreq --install
+
+
+cd $HOME/src
+git clone https://github.com/void-linux/void-packages.git
+cd void-packages
+./xbps-src binary-bootstrap
+
 sudo rm -f /var/service/wpa_supplicant
 rm -f /var/service/dhcpcd
 ln -s /etc/sv/dbus /var/service
