@@ -5,7 +5,7 @@ sudo ln -s /etc/sv/elogind /var/service/
 sudo ln -s /etc/sv/rtkit /var/service
 #Instalacion dwm
 
-sudo xbps-install git feh tmux neovim neofetch gcc dunst libX11-devel libXft-devel libXinerama-devel pkg-config setxkbmap firefox bash-completion font-awesome lsd nerd-fonts picom  noto-fonts-ttf noto-fonts-ttf-extra noto-fonts-emoji ranger scrot nsxiv libXrandr-devel mlocate
+sudo xbps-install git feh tmux neovim neofetch gcc dunst libX11-devel libXft-devel libXinerama-devel pkg-config setxkbmap firefox bash-completion font-awesome lsd nerd-fonts picom  noto-fonts-ttf noto-fonts-ttf-extra noto-fonts-emoji ranger scrot nsxiv libXrandr-devel mlocate network-manager-applet pa-applet
 sudo sh -c 'echo "modprobe -r usbmouse"|tee -a /etc/rc.local'
 sudo sh -c 'echo "modprobe -r bcm5974"|tee -a /etc/rc.local'
 sudo sh -c 'echo "modprobe bcm5974"|tee -a /etc/rc.local'
